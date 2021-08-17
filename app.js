@@ -44,6 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 temp.innerHTML = Math.round(data.main.temp);
                 country.innerHTML = data.sys.country;
                 weatherImg.setAttribute('src', `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`)
+                document.body.classList.add(`body${data.weather[0].icon}`)
             })
     }
 
@@ -60,6 +61,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 temp.innerHTML = Math.round(data.main.temp);
                 country.innerHTML = data.sys.country;
                 weatherImg.setAttribute('src', `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`)
+                document.body.className = ''
+                document.body.classList.add(`body${data.weather[0].icon}`)
                 celFar.innerText = 'C'
                 format.checked = false
             })

@@ -1,0 +1,90 @@
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.body01d {
+    background-color: #146afc;
+    color: #fff;
+}
+
+.body02d {
+    background-color: #3c7bbb;
+    color: #fff;
+}
+
+.body03d {
+    background-color: #9eb4ce;
+}
+
+.body04d {
+    background-color: #a9d0ee;
+}
+
+.body09d {
+    background-color: #6f8ba0;
+    color: #fff;
+}
+
+.body10d {
+    background-color: #748c9c;
+}
+
+.body11d {
+    background-color: #6e647a;
+    color: #fff;
+}
+
+.body13d {
+    background-color: #f9fbff;
+}
+
+.body50d {
+    background-color: rgb(163, 163, 163);
+}
+
+.body01n {
+    background-color: #111433;
+    color: #fff;
+}
+
+.body02n {
+    background-color: #242c30;
+    color: #fff;
+}
+
+.body03n {
+    background-color: #445258;
+    color: #fff;
+}
+
+.body04n {
+    background-color: #242c30;
+    color: #fff;
+}
+
+.body09n {
+    background-color: #1f272e;
+    color: #fff;
+}
+
+.body10n {
+    background-color: #42515a;
+    color: #fff;
+}
+
+.body11n {
+    background-color: #49385e;
+    color: #fff;
+}
+
+.body13n {
+    background-color: #62759b;
+    color: #fff;
+}
+
+.body50n {
+    background-color: rgb(44, 44, 44);
+    color: #fff;
+}
