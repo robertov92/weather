@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     let city = document.getElementById('city');
-    let temp = document.getElementById('temp');
-    let country = document.getElementById('country')
+    let temp = document.getElementById('temp')
+    let description = document.getElementById('description')
     let weatherImg = document.getElementById('weather-img')
     let weatherBtn = document.getElementById('get-weather')
     weatherBtn.addEventListener('click', getAnotherCity)
@@ -40,9 +40,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 return response.json()
             })
             .then(data => {
+                console.log(data)
                 city.innerHTML = data.name;
+                description.innerHTML = data.weather[0].description
                 temp.innerHTML = Math.round(data.main.temp);
-                country.innerHTML = data.sys.country;
                 weatherImg.setAttribute('src', `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`)
                 document.body.classList.add(`body${data.weather[0].icon}`)
             })
@@ -59,7 +60,6 @@ document.addEventListener('DOMContentLoaded', () => {
             .then(data => {
                 city.innerHTML = data.name;
                 temp.innerHTML = Math.round(data.main.temp);
-                country.innerHTML = data.sys.country;
                 weatherImg.setAttribute('src', `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`)
                 document.body.className = ''
                 document.body.classList.add(`body${data.weather[0].icon}`)

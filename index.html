@@ -11,12 +11,45 @@
 
 <body>
 
-    <img id="weather-img">
-    <p><span id="temp"></span>° <span id="c-f">C</span></p>
-    <input type='checkbox' id='format'>
-    <p><span id="city"></span>, <span id="country"></span></p>
-    <input type="text" id="new-name" placeholder="Enter name">
-    <button id="get-weather">Get weather</button>
+    <div class="container">
+        <p><span id="city"></span></p>
+        <p><span id="description"></span></p>
+        <img id="weather-img">
+        <p id="temp-p"><span id="temp"></span>° <span id="c-f">C</span></p>
+        <input type='checkbox' id='format'><br>
+        <!-- <table>
+            <tbody>
+
+                <tr>
+                    <th id="dayofweek1"></th>
+                    <th id="dayofweek2"></th>
+                    <th id="dayofweek3"></th>
+                    <th id="dayofweek4"></th>
+                    <th id="dayofweek5"></th>
+                </tr>
+                <tr>
+                    <td><img src="images/placeholderWeather.PNG" alt="" id="image-src1">
+                        <p><span id="forecast-temp1"></span> °F</p>
+                    </td>
+                    <td><img src="images/placeholderWeather.PNG" alt="" id="image-src2">
+                        <p><span id="forecast-temp2"></span> °F</p>
+                    </td>
+                    <td><img src="images/placeholderWeather.PNG" alt="" id="image-src3">
+                        <p><span id="forecast-temp3"></span> °F</p>
+                    </td>
+                    <td><img src="images/placeholderWeather.PNG" alt="" id="image-src4">
+                        <p><span id="forecast-temp4"></span> °F</p>
+                    </td>
+                    <td><img src="images/placeholderWeather.PNG" alt="" id="image-src5">
+                        <p><span id="forecast-temp5"></span> °F</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table> -->
+        <input type="text" id="new-name" placeholder="Another city's name"><br>
+        <button id="get-weather">Get weather</button>
+
+    </div>
 
     <script src="app.js"></script>
 </body>

@@ -1,11 +1,64 @@
-html {
+* {
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.container {
+    padding: 20px;
+}
+
+#city {
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+#description {
+    text-transform: capitalize;
+    font-size: 1.2rem;
+}
+
+#temp-p {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-top: -30px;
+}
+
+#format {
+    margin-bottom: 40px;
+}
+
+#new-name {
+    width: 100%;
+    max-width: 350px;
+    border: solid 1px #e2e2e2;
+    padding: 5px 0;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+#get-weather {
+    font-size: 1.2rem;
+    padding: 7px 20px 10px;
+    background-color: #7e0000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+#get-weather:hover {
+    background-color: #803d3d;
+}
+
+table {
+    background-color: whitesmoke;
+    color: #111433;
 }
 
 .body01d {
-    background-color: #146afc;
+    background-color: #2d7aff;
     color: #fff;
 }
 
@@ -32,7 +85,7 @@ html {
 }
 
 .body11d {
-    background-color: #6e647a;
+    background-color: #604f75;
     color: #fff;
 }
 
@@ -55,12 +108,12 @@ html {
 }
 
 .body03n {
-    background-color: #445258;
+    background-color: #293135;
     color: #fff;
 }
 
 .body04n {
-    background-color: #242c30;
+    background-color: #1e2325;
     color: #fff;
 }
 
@@ -70,7 +123,7 @@ html {
 }
 
 .body10n {
-    background-color: #42515a;
+    background-color: #272f35;
     color: #fff;
 }
 
@@ -85,6 +138,6 @@ html {
 }
 
 .body50n {
-    background-color: rgb(44, 44, 44);
+    background-color: rgb(31, 30, 30);
     color: #fff;
 }
