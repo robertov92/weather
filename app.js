@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let weatherImg = document.getElementById('weather-img')
     let weatherBtn = document.getElementById('get-weather')
     weatherBtn.addEventListener('click', getAnotherCity)
+    let name = document.getElementById('new-name')
     let format = document.getElementById('format')
     let celFar = document.getElementById('c-f')
     format.checked = false;
@@ -21,6 +22,12 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     })
 
+    name.addEventListener("keyup", function(event) {
+        if (event.keyCode === 13) {
+            event.preventDefault();
+            weatherBtn.click();
+        }
+    });
 
     function getLocation() {
         if (navigator.geolocation) {
@@ -40,19 +47,18 @@ document.addEventListener('DOMContentLoaded', () => {
                 return response.json()
             })
             .then(data => {
-                console.log(data)
                 city.innerHTML = data.name;
                 description.innerHTML = data.weather[0].description
                 temp.innerHTML = Math.round(data.main.temp);
                 weatherImg.setAttribute('src', `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`)
                 document.body.classList.add(`body${data.weather[0].icon}`)
+            }).catch(err => {
+                console.log(err)
             })
     }
 
     function getAnotherCity() {
-        const name = document.getElementById('new-name').value
-
-        const url = `https://api.openweathermap.org/data/2.5/weather?q=${name}&units=metric&appid=8fb6d8a1fed11d8a1a0433cabf99fd70`;
+        const url = `https://api.openweathermap.org/data/2.5/weather?q=${name.value.trim()}&units=metric&appid=8fb6d8a1fed11d8a1a0433cabf99fd70`;
         fetch(url)
             .then(response => {
                 return response.json()
@@ -66,6 +72,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 document.body.classList.add(`body${data.weather[0].icon}`)
                 celFar.innerText = 'C'
                 format.checked = false
+            }).catch((err) => {
+                city.innerHTML = 'Please check you input';
+                description.innerHTML = 'place not found'
+                temp.innerHTML = "?";
+                weatherImg.setAttribute('src', `404.png`)
+                console.log(err)
             })
 
     }
