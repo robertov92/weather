@@ -59,6 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
             })
             .then(data => {
                 city.innerHTML = data.name;
+                description.innerHTML = data.weather[0].description
                 temp.innerHTML = Math.round(data.main.temp);
                 weatherImg.setAttribute('src', `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`)
                 document.body.className = ''
