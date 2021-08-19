@@ -54,7 +54,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 document.body.classList.add(`body${data.weather[0].icon}`)
             }).catch(err => {
                 console.log(err)
-            })
+            });
+        fetch()
     }
 
     function getAnotherCity() {
@@ -72,6 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 document.body.classList.add(`body${data.weather[0].icon}`)
                 celFar.innerText = 'C'
                 format.checked = false
+                name.value = ''
             }).catch((err) => {
                 city.innerHTML = 'Please check you input';
                 description.innerHTML = 'place not found'

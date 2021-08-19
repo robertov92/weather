@@ -1,17 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Nunito', sans-serif;
     text-align: center;
 }
 
 .container {
-    padding: 20px;
+    padding: 10px;
+    color: white;
 }
 
 #city {
-    font-size: 2.5rem;
-    font-weight: 500;
+    font-size: 2rem;
+}
+
+#desc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    width: 35px;
 }
 
 #description {
@@ -21,13 +32,9 @@
 
 #temp-p {
     font-size: 3rem;
-    font-weight: 600;
-    margin-top: -30px;
 }
 
-#format {
-    margin-bottom: 40px;
-}
+#format {}
 
 #new-name {
     width: 100%;
@@ -59,86 +66,91 @@ table {
 }
 
 .body01d {
-    background-color: #2d7aff;
-    color: #fff;
+    background: linear-gradient( #51a4db, #73b9e1);
+    height: 100vh;
 }
 
 .body02d {
-    background-color: #3c7bbb;
-    color: #fff;
+    background: linear-gradient( #51a4db, #9ac5dd);
+    height: 100vh;
 }
 
 .body03d {
-    background-color: #9eb4ce;
+    background: linear-gradient( #65a5d0, #ccd0d1);
+    height: 100vh;
 }
 
 .body04d {
-    background-color: #a9d0ee;
+    background: linear-gradient( #5393b2, #a7bdca);
+    height: 100vh;
 }
 
 .body09d {
-    background-color: #6f8ba0;
-    color: #fff;
+    background: linear-gradient( #5393b2, #cfaea7);
+    height: 100vh;
 }
 
 .body10d {
-    background-color: #748c9c;
+    background: linear-gradient( #4065a4, #cfaea7);
+    height: 100vh;
 }
 
 .body11d {
-    background-color: #604f75;
-    color: #fff;
+    background: linear-gradient( #2e4979, #ac8f89);
+    height: 100vh;
 }
 
 .body13d {
-    background-color: #f9fbff;
+    background: linear-gradient( #777b86, #adb7be);
+    height: 100vh;
 }
 
 .body50d {
-    background-color: rgb(163, 163, 163);
+    background: linear-gradient( #bc8db8, #5f5f91);
+    height: 100vh;
 }
 
 .body01n {
-    background-color: #111433;
-    color: #fff;
+    background: linear-gradient( #091b49, #614c8f);
+    height: 100vh;
 }
 
 .body02n {
-    background-color: #242c30;
-    color: #fff;
+    background: linear-gradient( #091b49, #736394);
+    height: 100vh;
 }
 
 .body03n {
-    background-color: #293135;
-    color: #fff;
+    background: linear-gradient( #091b49, #9e99aa);
+    height: 100vh;
 }
 
 .body04n {
-    background-color: #1e2325;
-    color: #fff;
+    background: linear-gradient( #091b49, #aeaeae);
+    height: 100vh;
 }
 
-.body09n {
-    background-color: #1f272e;
-    color: #fff;
+.body09d {
+    background: linear-gradient( #0a1122, #5f504d);
+    height: 100vh;
 }
 
-.body10n {
-    background-color: #272f35;
-    color: #fff;
+.body10d {
+    background: linear-gradient( #0a1122, #5f5b5a);
+    height: 100vh;
 }
 
-.body11n {
-    background-color: #49385e;
-    color: #fff;
+.body11d {
+    background: linear-gradient( #0a1122, #747474);
+    height: 100vh;
 }
 
 .body13n {
-    background-color: #62759b;
-    color: #fff;
+    background: linear-gradient( #37383d, #798085);
+    height: 100vh;
 }
 
 .body50n {
-    background-color: rgb(31, 30, 30);
-    color: #fff;
+    background: linear-gradient( #684e65, #29293d);
+    height: 100vh;
 }
